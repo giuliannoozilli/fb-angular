@@ -9,10 +9,12 @@ import { AppComponent } from './app.component';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { AngularFireModule } from '@angular/fire/compat';
 import { environment } from 'src/environments/environment';
+import { ProductoComponent } from './producto/producto.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ProductoComponent
   ],
   imports: [
     BrowserModule,
