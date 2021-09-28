@@ -1,3 +1,4 @@
+import { ProductoService } from './../services/producto.service';
 import { Component, OnInit } from '@angular/core';
 import { Producto } from 'src/models/producto.interface';
 
@@ -9,10 +10,12 @@ import { Producto } from 'src/models/producto.interface';
 export class ProductoComponent implements OnInit {
 
   public productos!: Producto[];
-  constructor() { }
+  constructor(
+
+  ) { }
 
   ngOnInit(): void {
-    this.productoService.ProductoService
+    this.ProductoService//.ProductoService
     .subscribe((respuesta) =>{
       this.productos = respuesta;
       console.log(this.productos)
