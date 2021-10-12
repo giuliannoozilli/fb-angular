@@ -12,6 +12,25 @@ export class ProductoComponent implements OnInit {
   public productos!: Producto[];
   constructor(private productoService: ProductoService) { }
 
+  public cursos = [
+    {
+      nombre: 'Angular',
+      descripcion: 'Curso Introductorio',
+      fechaInicio: new Date('2021-12-12')
+    },
+    {
+
+    }
+  ]
+  /*
+   ██████╗ ██╗    ██╗ ██████╗
+  ██╔═══██╗██║    ██║██╔═══██╗
+  ██║   ██║██║ █╗ ██║██║   ██║
+  ██║   ██║██║███╗██║██║   ██║
+  ╚██████╔╝╚███╔███╔╝╚██████╔╝
+   ╚═════╝  ╚══╝╚══╝  ╚═════╝
+
+  */
   ngOnInit(): void {
     this.productoService.productos
     .subscribe((respuesta) =>{
