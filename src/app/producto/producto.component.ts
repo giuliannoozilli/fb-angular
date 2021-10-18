@@ -18,9 +18,6 @@ export class ProductoComponent implements OnInit {
       descripcion: 'Curso Introductorio',
       fechaInicio: new Date('2021-12-12')
     },
-    {
-
-    }
   ]
 
   ngOnInit(): void {
