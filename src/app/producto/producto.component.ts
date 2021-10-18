@@ -22,16 +22,7 @@ export class ProductoComponent implements OnInit {
 
     }
   ]
-  /*
 
-   ██████╗ ██╗    ██╗ ██████╗
-  ██╔═══██╗██║    ██║██╔═══██╗
-  ██║   ██║██║ █╗ ██║██║   ██║
-  ██║   ██║██║███╗██║██║   ██║
-  ╚██████╔╝╚███╔███╔╝╚██████╔╝
-   ╚═════╝  ╚══╝╚══╝  ╚═════╝
-
-  */
   ngOnInit(): void {
     this.productoService.productos
     .subscribe((respuesta) =>{
